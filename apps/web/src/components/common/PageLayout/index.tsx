@@ -24,6 +24,13 @@ const PageLayout = ({ pathname, children }: { pathname: string; children: ReactE
   return (
     <>
       <header className={css.header}>
+        <div style="
+          text-align: center;
+          padding: 12px 24px;
+          border-bottom: 1px solid #303033;
+"       >
+          <strong>Notes:</strong> Forked from Safe (safe.global) by CotiAgents.ai to support the COTI V2 network. This is a beta release — please use at your own discretion.
+        </div>
         <Header onMenuToggle={isSidebarRoute ? setSidebarOpen : undefined} onBatchToggle={setBatchOpen} />
       </header>
 

@@ -11,7 +11,7 @@
 .main {
   background-color: var(--color-background-main);
   padding-left: 230px;
-  padding-top: calc(var(--header-height) + env(safe-area-inset-top));
+  padding-top: calc(var(--header-height) + env(safe-area-inset-top) + 69px);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,6 +72,12 @@
 .sidebarToggle:hover,
 .sidebarToggle:hover button {
   background-color: var(--color-background-light);
+}
+
+.topbar {
+  text-align: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #303033;
 }
 
 @media (max-width: 899.95px) {

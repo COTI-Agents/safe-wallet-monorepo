@@ -74,6 +74,12 @@
   background-color: var(--color-background-light);
 }
 
+.topbar {
+  text-align: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #303033;
+}
+
 @media (max-width: 899.95px) {
   .main {
     padding-left: 0;

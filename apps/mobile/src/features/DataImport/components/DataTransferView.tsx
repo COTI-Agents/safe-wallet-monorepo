@@ -1,7 +1,6 @@
 import React from 'react'
 import { Text, YStack, Image, styled, H2, H5, getTokenValue } from 'tamagui'
 import { SafeButton } from '@/src/components/SafeButton'
-import { StatusBar } from 'expo-status-bar'
 import TransferOldAppDark from '@/assets/images/transfer-old-app-dark.png'
 import TransferOldAppLight from '@/assets/images/transfer-old-app-light.png'
 import { ColorSchemeName } from 'react-native'
@@ -27,8 +26,6 @@ export const DataTransferView = ({
 }: DataTransferViewProps) => {
   return (
     <YStack flex={1} paddingTop={'$4'} testID="data-transfer-screen">
-      <StatusBar style="light" />
-
       {/* Content */}
       <YStack flex={1} paddingHorizontal="$4" justifyContent="space-between" marginBottom={'$4'}>
         <YStack gap="$4" alignItems="center">
@@ -51,13 +48,10 @@ export const DataTransferView = ({
           )}
 
           <H2 fontWeight={'600'} textAlign="center">
-            Transfer your data for a quick start
+            Import old app data
           </H2>
 
-          <StyledText>
-            Easily bring over your Safe accounts, signers, and address book from the old app for a smooth start, if you
-            have used it before.
-          </StyledText>
+          <StyledText>Move your Safe accounts, signers, and address book in minutes.</StyledText>
         </YStack>
 
         {/* Phone Mockup */}
@@ -67,7 +61,7 @@ export const DataTransferView = ({
       {/* Bottom Buttons */}
       <YStack gap="$3" paddingHorizontal="$4" paddingBottom={bottomInset} paddingTop="$4">
         <SafeButton primary testID="transfer-data-button" onPress={onPressTransferData}>
-          Transfer data
+          Import data
         </SafeButton>
 
         <SafeButton text testID="start-fresh-button" onPress={onPressStartFresh}>
